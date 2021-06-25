@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main {
+   int sum=0;
+	int Calculate(int m, int n){
+    for (int i = m; i < n; i++)
+    if((i%3==0) && (i%5==0))
+    sum = sum+i;
+    return sum;
+    }
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in); 
+	        System.out.println("Enter the value of m and n:");
+	        int m =  sc.nextInt();
+	        int n = sc.nextInt();
+	        Main z = new Main();
+	        int result = z.Calculate(m,n);
+	        System.out.println(result);
+}
+}
